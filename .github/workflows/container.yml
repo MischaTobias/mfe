@@ -30,7 +30,7 @@ jobs:
       - uses: chetan/invalidate-cloudfront-action@master
         env:
           DISTRIBUTION: ${{ secrets.AWS_DISTRIBUTION_ID }}
-          AWS_DEFAULT_REGION: 'us-east-2'
+          AWS_REGION: 'us-east-2'
           PATHS: '/container/latest/index.html'
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
