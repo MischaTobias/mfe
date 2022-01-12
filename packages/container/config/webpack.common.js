@@ -1,5 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-//test for yml file
+
+const x = 'test';
+
 module.exports = {
   module: {
     rules: [
